@@ -1,5 +1,3 @@
-<img src="presentation.png">
-
 # Poções e Soluções 🧙‍♂️
 
 Olá galera, este projeto trata-se de uma loja fictícia de materiais mágicos, desenvolvida utilizando o React.
@@ -11,3 +9,6 @@ Olá galera, este projeto trata-se de uma loja fictícia de materiais mágicos, 
 # 🎨 Layout
 
 O layout do projeto teve ênfase em tons mais escuros refletindo à um ambiente místico.
+
+
+<img src="presentation.png">
