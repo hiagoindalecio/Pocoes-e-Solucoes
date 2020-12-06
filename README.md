@@ -1,5 +1,4 @@
 <img src="/web/src/assets/logo.png">
-<h1>Poções e Soluções<h1/>
 <img src="presentation.png">
 
 # Poções e Soluções 🧙‍♂️
