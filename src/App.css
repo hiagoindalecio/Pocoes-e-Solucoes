@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #a6a9af;
+  --text-color: #2A2F33;
+  --secondary-color: #8C8C9C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#general_body {
+  background: var(--primary-color);
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-color);
+}
+
+#general_body, input, button, div {
+  font-family: Texturina, serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  color: var(--text-color);
+  font-family: Texturina, serif;
+}

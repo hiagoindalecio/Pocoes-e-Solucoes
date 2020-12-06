@@ -1,0 +1,18 @@
+@media(min-width: 900px) {
+  .potions {
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+  }
+}
+
+@media(max-width: 900px) {
+  .potions {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    margin: 2em;
+  }
+}

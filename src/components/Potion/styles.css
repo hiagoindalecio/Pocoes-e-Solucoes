@@ -1,0 +1,11 @@
+.card {
+    width: 18rem;
+    background: var(--secondary-color);
+}
+
+.card-img-top {
+  max-width:150px;
+  max-height:200px;
+  width: auto;
+  height: auto;
+}
