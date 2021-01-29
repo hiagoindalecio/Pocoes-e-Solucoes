@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../bootstrap-4.5.3-dist/css/bootstrap.min.css';
 
-const Home_page = () => {
+const Home_page: React.FC = () => {
     return(
         <fieldset>
             <div className="field">

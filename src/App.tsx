@@ -3,10 +3,13 @@ import './App.css';
 
 // Components
 import Routes from './routes'
+import { PotionsProvider } from './contexts/potions';
 
 function App() {
   return (
-    <Routes />
+    <PotionsProvider>
+      <Routes />
+    </PotionsProvider>
   );
 }
 

@@ -29,7 +29,7 @@
   justify-content: center;
 }
 
-footer p a {
+.link {
   text-decoration: none;
   color: var(--text-color);
 }
@@ -84,7 +84,6 @@ footer p a {
   justify-content: center;
   list-style: none;
   text-align: center;
-  justify-content: end;
 }
 
 .nav-item {

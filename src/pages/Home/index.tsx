@@ -1,29 +1,34 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState, useContext} from 'react';
 import './styles.css';
 import '../../bootstrap-4.5.3-dist/css/bootstrap.min.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 import logo from '../../assets/logo.png';
 
-import Home_page from '../Home_page';
+import HomePage from '../HomePage';
 import Potions from '../Potions';
 import History from '../History';
 
-const Home = () => {
+import PotionsContext from '../../contexts/potions';
+
+const Home: React.FC = () => {
     const [component, setComponent] = useState<JSX.Element>();
+    const { getPotions } = useContext(PotionsContext);
+
     useEffect(() => {
-        setComponent(Home_page);
-    }, [])
-    function handleSelectedField(componentName: string) {
+        setComponent(<HomePage />);
+    }, []);
+
+    async function handleSelectedField(componentName: string) {
         switch(componentName) {
             case 'Home':
-                setComponent(Home_page);
+                setComponent(<HomePage />);
                 break;
             case 'Potions':
-                setComponent(Potions);
+                setComponent(<Potions props={{content: (await getPotions()).content}} />);
                 break;
             case 'History':
-                setComponent(History);
+                setComponent(<History />);
         }
     }
     const[click,setClick] = useState(false);
@@ -65,10 +70,10 @@ const Home = () => {
                 </form>
                 <footer>
                     <div className="footer-information">
-                        <p>
-                            <a href="mailto:pocoesolucoes@outlook.com">pocoesolucoes@outlook.com</a>
+                        <div>
+                            <a className="link" href="mailto:pocoesolucoes@outlook.com">pocoesolucoes@outlook.com</a>
                             <p>Beco Vertical, número 789<br/>Desenvolvido por: Hiago Indalécio</p>
-                        </p>
+                        </div>
                     </div>
                 </footer>
             </div>

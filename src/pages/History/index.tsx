@@ -1,6 +1,6 @@
 import React from 'react';
 
-const History = () => {
+const History: React.FC = () => {
     return(
         <fieldset>
             <div className="field">
